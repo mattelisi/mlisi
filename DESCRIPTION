@@ -1,0 +1,19 @@
+Package: mlisi
+Title: Miscellaneous R helpers and functions
+Version: 1.0.0.0000
+Authors@R: person("Matteo", "Lisi", email = "matte@bruttocarattere.org", role = c("aut", "cre"))
+Description: Heterogeneous set of functions for analysis of psychophysical data, 
+    basic signal processing, model fitting, helpers and conversion functions
+    The only reason why these are packaged together is that I wrote them and use them often. 
+Depends: R (>= 3.5.1)
+License: GNU GPLv2 or any later version
+Encoding: UTF-8
+LazyData: true
+Imports:
+    boot,
+    optimx,
+    MASS,
+    numDeriv,
+    ggplot2,
+    grid
+RoxygenNote: 6.1.0
