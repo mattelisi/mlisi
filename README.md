@@ -10,3 +10,8 @@ library(devtools)
 install_github("mattelisi/mlisi")
 ```
 Documentation is perhaps not exaustive, but is there.
+
+To get started and see a list of the functions included, use
+```
+help(package=mlisi)
+```
