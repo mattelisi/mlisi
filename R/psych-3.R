@@ -1,7 +1,7 @@
 #' Psychometric
 #'
-#' (negative) log-likelihood calculation for multiple condition
-#' the lapse rate is assumed invariant across conditions
+#' (negative) log-likelihood calculation for multiple conditions.
+#' The lapse rate is assumed invariant across conditions.
 #' @param p parameter vector, c(mu, sigma, lambda)
 #' @param d  a dataframe with a column `r` that indicate response (0,1) and a column `x` that indicate the stimulus, plus a column `condition`
 #' @export
@@ -17,11 +17,9 @@
 #' for(i in 1:sum(d$condition=="2")) {d$r[d$condition=="2"][i] <- rbinom(1,1,psy_3par(d$x[d$condition=="2"][i],0,1,0.05))}
 #' for(i in 1:sum(d$condition=="3")) {d$r[d$condition=="3"][i] <- rbinom(1,1,psy_3par(d$x[d$condition=="3"][i],0,1.5,0.05))}
 #' 
-#' # set reasonable intial guesses and boundaries, and do contrained optimization
+#' # set reasonable intial guesses and fit model with optim 
 #' start_p <- c(rep(c(0,1),3), 0.01)
-#' l_b <- c(rep(c(-6,0.0001),3), 0)
-#' u_b <- c(rep(c(6,6),3), 0.2)
-#' fit <- optim(par = start_p, lnorm_3par_multi , d=d, method="L-BFGS-B",hessian = T, lower =l_b, upper =u_b)
+#' fit <- optim(par = start_p, lnorm_3par_multi , d=d, hessian = T)
 #' 
 #' # estimated parameters
 #' round(fit$par,digits=5)
@@ -30,9 +28,10 @@
 #' sqrt(diag(solve(fit$hessian)))
 #' 
 #' # simple ggplot figure 
+#' library(ggplot2)
 #' nd <- expand.grid(x=seq(-3,3,length.out=200),condition=unique(d$condition))
 #' nd$r <- predict_3par_multi(fit$par, nd)
-#' ggplot2::ggplot(d, aes(x=x,y=r))+geom_point(pch=19,col="blue",alpha=0.05)+geom_line(data=nd,color="black",lwd=0.5)+facet_grid(.~condition)+nice_theme
+#' ggplot(d, aes(x=x,y=r))+geom_point(pch=19,col="blue",alpha=0.05)+geom_line(data=nd,color="black",lwd=0.5)+facet_grid(.~condition)+nice_theme
 
 
 lnorm_3par_multi <- function(p,d){
