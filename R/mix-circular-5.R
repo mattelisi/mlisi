@@ -14,18 +14,17 @@ fit_mixture <- function(v, se = T, method = "noboot", nsim = 1000) {
 		ftm <- optimx::optimx(par = start_par, negLogLik_mix, d = v, method = "bobyqa", lower = loB, upper = upB)
 		outV <- unlist(matrix(ftm[1, 1:3], 1, 3))
 		names(outV) <- c("pu", "mu", "k")
-		
+
 	} else {
 		ftm <- optimx::optimx(par = start_par, negLogLik_mix, d = v, method = "bobyqa", lower = loB, upper = upB)
 		outV <- unlist(matrix(ftm[1, 1:3], 1, 3))
-		#outV <- c(outV, sqrt(diag(solve(numDeriv::hessian(negLogLik_wrapper, x=outV, d=v)))))
-		outV <- c(outV, sqrt(diag(MASS::ginv(numDeriv::hessian(negLogLik_wrapper, x = outV, d = v)))))
-		
+		outV <- c(outV, sqrt(diag(MASS::ginv(numDeriv::hessian(negLogLik_mix, x = outV, d = v)))))
+
 		if (method == "boot") {
 
 			bootmuse <- function(v, i) {
 				start_par <- c(0.01, mean(v), (1/sd(v))/10)
-				ftm <- optimx::optimx(par = start_par, negLogLik_wrapper, d = v, method = "bobyqa", lower = loB, upper = upB)
+				ftm <- optimx::optimx(par = start_par, negLogLik_mix, d = v, method = "bobyqa", lower = loB, upper = upB)
 				outV <- unlist(matrix(ftm[1, 1:3], 1, 3))
 				return(outV[2])
 			}
