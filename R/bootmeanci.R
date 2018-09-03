@@ -19,16 +19,21 @@ bootMeanCI <- function(v,nsim=1000,method="bca", alpha=0.05, ...){
 	  
 	    # estimate bias in std. norm deviates
 	    obs <- mean(v)
-	    b=qnorm((sum(bootRes$t > obs)+sum(bootRes$t==obs)/2)/nsim)
+	    b <- qnorm((sum(bootRes$t > obs)+sum(bootRes$t==obs)/2)/nsim)
 	    
 	    # estimate acceleration constant
-	    n=length(v) ; n1=n-1 ; obsn=obs*n
-	    pv=i=0 ; while(i < n){i=i+1 ; pv[i]=obsn-n1*mean(v[-i])}
-	    je=mean(pv)-pv
-	    a=sum(je^3)/(6*sum(je^2))^(3/2)
+	    n <- length(v) 
+	    n1 <- n-1
+	    obsn <- obs*n
+	    pv <- i <- 0 
+	    while(i < n){i=i+1
+	      pv[i] <- obsn-n1*mean(v[-i])
+	    }
+	    je <- mean(pv)-pv
+	    a <- sum(je^3)/(6*sum(je^2))^(3/2)
 	    
-	    z=qnorm(c(alpha/2,1-alpha/2)) # Std. norm. limits
-	    p=pnorm((z-b)/(1-a*(z-b))-b) # correct & convert to proportions
+	    z <- qnorm(c(alpha/2,1-alpha/2)) # Std. norm. limits
+	    p <- pnorm((z-b)/(1-a*(z-b))-b) # correct & convert to proportions
 	    
 	    return(quantile(bootRes$t,p=p)) # ABC percentile lims.
 	}
