@@ -4,8 +4,18 @@
 \alias{bootMeanCI}
 \title{Miscellaneous helpers}
 \usage{
-bootMeanCI(v, nsim = 1000, ...)
+bootMeanCI(v, nsim = 1000, method = "bca", alpha = 0.05, ...)
+}
+\arguments{
+\item{nsim}{number of bootstrap simulations (default is 1000)}
+
+\item{method}{Either "bca" (default, accellerated & bias-corrected, Efron, 1987), or "percentile"}
+
+\item{alpha}{Either "bca" (accellerated & bias-corrected, Efron, 1987), or "percentile"}
+}
+\value{
+the 95% confidence limits
 }
 \description{
-Bootstrapped 95% CI (quantile method)
+Bootstrapped 95% CI (BCA / percentile method)
 }
