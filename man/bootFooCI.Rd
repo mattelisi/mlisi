@@ -4,13 +4,13 @@
 \alias{bootFooCI}
 \title{Miscellaneous helpers}
 \usage{
-bootFooCI(v, nsim = 1000, FUN = mean(), method = "bca",
+bootFooCI(v, nsim = 1000, foo = "mean", method = "bca",
   alpha = 0.05, ...)
 }
 \arguments{
 \item{nsim}{number of bootstrap simulations (default is 1000)}
 
-\item{FUN}{is the function that compute the statistic of interest}
+\item{foo}{is the function that compute the statistic of interest}
 
 \item{method}{Either "bca" (default, accellerated & bias-corrected, Efron, 1987), or "percentile"}
 
