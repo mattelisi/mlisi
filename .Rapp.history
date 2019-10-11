@@ -1,0 +1,966 @@
+var(x1)
+x1 <- mvrnorm(60, mu = 0, Sigma = 9, empirical = F)
+var(x1)
+x1 <- mvrnorm(60, mu = 0, Sigma = 9, empirical = F)
+var(x1)
+sum((x1 - mean(x1))^2 / 60)
+x1 <- mvrnorm(60, mu = 0, Sigma = 9, empirical = TRUE)
+var(x1)
+?mvrnorm
+x1 <- mvrnorm(60, mu = 0, Sigma = 9, empirical = TRUE)
+var(x1)
+sum((x1 - mean(x1))^2 / 60)
+9 * (60/(60-1))
+x1 <- mvrnorm(60, mu = 0, Sigma = 9 * (60/(60-1)), empirical = TRUE)
+var(x1)
+sum((x1 - mean(x1))^2 / 60) # biased variance
+?mvrnorm
+Sigma <- matrix(c(10,3,3,2),2,2)#
+Sigma#
+var(mvrnorm(n = 1000, rep(0, 2), Sigma)
+)
+var(mvrnorm(n = 1000, rep(0, 2), Sigma, empirical = TRUE))
+x2 <- c(mvrnorm(20, mu = 0, Sigma = 9, empirical = TRUE),#
+		mvrnorm(20, mu = 0, Sigma = 9, empirical = TRUE),#
+		mvrnorm(20, mu = 0, Sigma = 9, empirical = TRUE))#
+var(x2)
+var(x2) * (60-1)/(60-2)
+var(x2) * (60-2)/(60-3)
+var(x2) * (30-1)/(30-2)
+var(x2) * (60-1)/(60-3)
+x2 <- c(mvrnorm(10, mu = 0, Sigma = 9, empirical = TRUE),#
+		mvrnorm(10, mu = 0, Sigma = 9, empirical = TRUE),#
+		mvrnorm(10, mu = 0, Sigma = 9, empirical = TRUE),#
+		mvrnorm(10, mu = 0, Sigma = 9, empirical = TRUE),#
+		mvrnorm(10, mu = 0, Sigma = 9, empirical = TRUE),#
+		mvrnorm(10, mu = 0, Sigma = 9, empirical = TRUE))
+var(x2)
+var(x2) * (60-1)/(60-6)
+x2 <- c(mvrnorm(20, mu = 0, Sigma = 9, empirical = TRUE),#
+		mvrnorm(20, mu = 0, Sigma = 9, empirical = TRUE),#
+		mvrnorm(20, mu = 0, Sigma = 9, empirical = TRUE),#
+		mvrnorm(20, mu = 0, Sigma = 9, empirical = TRUE),#
+		mvrnorm(20, mu = 0, Sigma = 9, empirical = TRUE),#
+		mvrnorm(20, mu = 0, Sigma = 9, empirical = TRUE))
+var(x2)
+var(x2) * (60-1)/(60-6)
+var(x2) * (120-1)/(120-6)
+sum((x2 - mean(x2))^2 / 120)
+x2 <- c(mvrnorm(20, mu = 0, Sigma = 9* (120-1)/(120-6), empirical = TRUE),#
+		mvrnorm(20, mu = 0, Sigma = 9* (120-1)/(120-6), empirical = TRUE),#
+		mvrnorm(20, mu = 0, Sigma = 9* (120-1)/(120-6), empirical = TRUE),#
+		mvrnorm(20, mu = 0, Sigma = 9* (120-1)/(120-6), empirical = TRUE),#
+		mvrnorm(20, mu = 0, Sigma = 9* (120-1)/(120-6), empirical = TRUE),#
+		mvrnorm(20, mu = 0, Sigma = 9* (120-1)/(120-6), empirical = TRUE))
+var(x2)
+25/4
+25/4 + 133/4
+133/4
+118.71 + 39.5
+x <- 1:37
+x
+x <- vector("numeric", 37)#
+for(i in 1:37){#
+	x[i] <- -5 +8*i -6*i^2#
+}#
+sum(x)
+x <- vector("numeric", 37)
+x
+for(i in 1:37){#
+	x[i] <- -5 +8*i -6*i^2#
+}
+x
+-5 + 8*37 -6*(37^2)
+x <- vector("numeric", 5)#
+for(i in -1:4){#
+	x[i] <- 7#
+}#
+sum(x)
+x <- vector("numeric", 7)#
+for(i in 2:5){#
+	x[i] <- 6*i - 5 #
+}#
+sum(x)
+x
+(1+25)*25/2
+x <- vector("numeric", 7)#
+for(i in 1:25){#
+	x[i] <- i #
+}#
+sum(x)
+42 + 22*+21 + 35*22*43
+x <- vector("numeric", 21)#
+for(i in 1:21){#
+	x[i] <- 2 - 2*i - 10*i^"" #
+}#
+sum(x)
+x <- vector("numeric", 21)#
+for(i in 1:21){#
+	x[i] <- 2 - 2*i - 10*i^2#
+}#
+sum(x)
+42 - 22*+21 - 35*22*43
+for(i in 1:21){#
+	x[i] <- 1#2 - 2*i - 10*i^2#
+}#
+sum(x)
+37*38 *(2*37+1)/6
+x <- vector("numeric", 37)#
+for(i in 1:37){#
+	x[i] <- i^2#
+}#
+sum(x)
+x <- vector("numeric", 3)#
+for(i in 1:3){#
+	x[i] <- 3*i -6#
+}#
+sum(x)
+sqrt(3)
+7*8
+7/2
+6+7
+13^2
+-10*(169/4)
+-75 -422.5
+FUN<-function(x){-9*x^2 - x +8}
+(FUN(4)+FUN(6)+FUN(8)+FUN(10)+FUN(12))*2
+3.5*(-75 -422.5)
+f<-function(x){-10*x^2 +3*x +6}
+f(3)
+f(6.5)
+(f(3)+f(6.5))*3.5
+(17-8)/2
+4.5 + 8
+f<-function(x){-9*x^2 -10*x -10}
+(f(8)+f(12.5))*4.5
+8.4.5
+8+4.5
+12.5+4.5
+bisq <- function(x,k){#
+	k^2/6 * (1 -(1-(x/k)^2)^3)#
+}
+x <- seq(-3,3,length.out=100)
+plot(x,bisq(x,2))
+plot(x,bisq(x,2),type="o")
+plot(x,bisq(x,2),type="l")
+abline(v=2,lty=2)
+abline(v=-2,lty=2)
+plot(x,x^2,pch="*")
+plot(x,bisq(x,2),type="l")
+abline(v=-2,lty=2)
+abline(v=2,lty=2)
+points(x,x^2,cex=0.8)
+plot(x,bisq(x,1.8),type="l")
+x <- seq(-2,2,length.out=100)
+plot(x,bisq(x,1.8),type="l")
+x <- seq(-2.5,2.5,length.out=100)
+plot(x,bisq(x,1.8),type="l")
+abline(v=c(1.8,-1.8),lty=2)
+points(x,x^2,cex=0.8)
+bisq <- function(x,k){#
+	ifelse(x<=k,k^2/6 * (1 -(1-(x/k)^2)^3),k^2/6)#
+}
+bisq <- function(x,k){#
+	ifelse(x<=k,k^2/6 * (1 -(1-(x/k)^2)^3),k^2/6)#
+}#
+#
+x <- seq(-2.5,2.5,length.out=100)
+plot(x,bisq(x,2))
+bisq <- function(x,k){#
+	ifelse(abs(x)<=k,k^2/6 * (1 -(1-(x/k)^2)^3),k^2/6)#
+}#
+#
+x <- seq(-2.5,2.5,length.out=100)#
+plot(x,bisq(x,2))
+plot(x,bisq(x,2),type="l")
+x <- seq(-2.5,2.5,length.out=100)#
+plot(x,bisq(x,1.8),type="l",ylim=c(0,1.5))#
+abline(h=c(-1.8,1.8),lty=2)
+plot(x,bisq(x,1.8),type="l",ylim=c(0,1.2))
+plot(x,bisq(x,1.8),type="l",ylim=c(0,1))
+abline(h=c(-1.8,1.8),lty=2)
+abline(v=c(-1.8,1.8),lty=2)
+plot(x,x^2,cex=0.6)
+x <- seq(-2.5,2.5,length.out=100)#
+plot(x,bisq(x,1.8),type="l",ylim=c(0,1))#
+abline(v=c(-1.8,1.8),lty=2)#
+points(x,x^2,cex=0.6)
+x <- seq(-2.5,2.5,length.out=200)#
+plot(x,bisq(x,1.8),type="l",ylim=c(0,1))#
+abline(v=c(-1.8,1.8),lty=2)#
+points(x,x^2,cex=0.6)
+x <- seq(-2.5,2.5,length.out=300)#
+plot(x,bisq(x,1.8),type="l",ylim=c(0,1))#
+abline(v=c(-1.8,1.8),lty=2)#
+points(x,x^2,cex=0.6)
+plot(x,bisq(x,1.8),type="l",ylim=c(0,1),col="blue")
+abline(v=c(-1.8,1.8),lty=2)
+points(x,x^2,cex=0.6,col="red")
+plot(x,bisq(x,1.8),type="o",ylim=c(0,1),col="blue")
+plot(x,bisq(x,1.8),type="o",cex=0.4,ylim=c(0,1),col="blue")
+plot(x,bisq(x,1.8),type="o",cex=0.6,ylim=c(0,1),col="blue")
+plot(x,bisq(x,1.8),type="l",lwd=2,ylim=c(0,1),col="blue")
+abline(v=c(-1.8,1.8),lty=2)
+points(x,x^2,cex=0.6,col="red")
+agev <- c(33,55,75,33,26,25,32,24,29,36,39,26,28,27,37,43,45,41,30,33)
+length(agev)
+mean(agev)
+sd(agev)
+47.72/4
+158.21 + 11.93
+sqrt(0.1^2 + 0.1^2)
+sqrt(0.15^2 + 0.125^2)
+source("/Users/matteo/sync/study2/tvt2/analysis/prepare/prepare.sh")
+library(data.table)#
+#
+DT <- data.table(x = seq(0, 3.5, by=0.01))
+DT[, Z_abs := 2*dnorm(x)]
+library(data.table)#
+#
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, Z_abs := 2*dnorm(x)] #
+#
+DT[, X_squared := x^2]#
+library(ggplot2)#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=1)]#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  geom_line(aes(y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+DT[, X2_squared := dnorm(x)^2]
++ geom_line(aes(y=X2_squared), color="blue")
+str(DT)
+library(data.table)#
+#
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, Z_abs := 2*dnorm(x)] #
+#
+DT[, X_squared := x^2]#
+DT[, X2_squared := dnorm(x)^2]
+str(DT)
+plotDT$X2_squared
+plot(DT$X2_squared)
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, Z_abs := 2*dnorm(x)] #
+#
+DT[, X_squared := x^2]#
+#
+library(ggplot2)#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=2)]#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  geom_line(aes(y=Chisq), color="red") +#
+  + geom_line(aes(y=X2_squared), color="blue")#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+geom_line(aes(y=Chisq), color="red") +
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  geom_line(aes(y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, Z_abs := 2*dnorm(x)/sqrt(2)] #
+#
+DT[, X_squared := x^2]#
+#
+library(ggplot2)#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=2)]#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  geom_line(aes(y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, Z_abs := 2*dnorm(x)/(sqrt(2)-1)] #
+#
+DT[, X_squared := x^2]#
+#
+library(ggplot2)#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=2)]#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  geom_line(aes(y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, Z_abs := 2*dnorm(x)/(sqrt(2))] #
+#
+DT[, X_squared := x^2]#
+#
+library(ggplot2)#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=2)]#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  geom_line(aes(y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+library(data.table)#
+#
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, Z_abs := dnorm(x)] #
+#
+DT[, X_squared := x^2]#
+#
+library(ggplot2)#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=2)]#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  geom_line(aes(y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+library(data.table)#
+#
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, Z_abs := 2*dnorm(x)] #
+#
+DT[, X_squared := x^2]#
+#
+library(ggplot2)#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=2)]#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  geom_line(aes(y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+rm(list=ls())#
+#
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, Z_abs := 2*dnorm(x)] #
+#
+DT[, X_squared := x^2]#
+#
+library(ggplot2)#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=2)]#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  geom_line(aes(y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+rm(list=ls())#
+#
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, Z_abs := 2*dnorm(x)] #
+#
+DT[, X_squared := x^2]#
+#
+library(ggplot2)#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=1)]#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  geom_line(aes(y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+rm(list=ls())#
+#
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, Z_abs := dnorm(x)] #
+#
+DT[, X_squared := x^2]#
+#
+library(ggplot2)#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=1)]#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  geom_line(aes(y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+rm(list=ls())#
+#
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, Z_abs := dnorm(x)] #
+#
+DT[, X_squared := Z_abs^2]#
+#
+library(ggplot2)#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=1)]#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  geom_line(aes(y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+rm(list=ls())#
+#
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, Z_abs := 2*dnorm(x)] #
+#
+DT[, X_squared := x^2]#
+#
+library(ggplot2)#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=1)]#
+#
+ggplot(DT, aes(x=X_squared, y=Z_abs)) + geom_line() +#
+  geom_line(aes(x=x,y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+DT[, X_squared := x^2 * 1/(2*sqrt(x))]
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=1)]#
+#
+ggplot(DT, aes(x=X_squared, y=Z_abs)) + geom_line() +#
+  geom_line(aes(x=x,y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+rm(list=ls())#
+#
+DT <- data.table(x = seq(0, 3.5, by=0.01))
+DT[, Z_abs := dnorm(x)]
+DT[, X_squared := x^2 * 1/(2*sqrt(x))]#
+#
+library(ggplot2)#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=1)]#
+#
+ggplot(DT, aes(x=X_squared, y=Z_abs)) + geom_line() +#
+  geom_line(aes(x=x,y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, Z_abs := 2*dnorm(x)* 1/(2*sqrt(x))] #
+#
+DT[, X_squared := x^2 ]#
+#
+library(ggplot2)#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=1)]#
+#
+ggplot(DT, aes(x=X_squared, y=Z_abs)) + geom_line() +#
+  geom_line(aes(x=x,y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+rm(list=ls())#
+#
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, Z_abs := 2*dnorm(x)* 1/(2*x)] #
+#
+DT[, X_squared := x^2 ]#
+#
+library(ggplot2)#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=1)]#
+#
+ggplot(DT, aes(x=X_squared, y=Z_abs)) + geom_line() +#
+  geom_line(aes(x=x,y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, Z_abs := dnorm(x)* 1/(2*sqrt(x)] #
+#
+DT[, X_squared := x^2 ]#
+#
+library(ggplot2)#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=1)]#
+#
+ggplot(DT, aes(x=X_squared, y=Z_abs)) + geom_line() +#
+  geom_line(aes(x=x,y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+rm(list=ls())#
+#
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, Z_abs := dnorm(x)* 1/(2*sqrt(x)] #
+#
+DT[, X_squared := x^2 ]#
+#
+library(ggplot2)#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=1)]#
+#
+ggplot(DT, aes(x=X_squared, y=Z_abs)) + geom_line() +#
+  geom_line(aes(x=x,y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+rm(list=ls())#
+#
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, Z_abs := dnorm(x)* 1/(2*sqrt(x))]
+DT[, X_squared := x^2 ]#
+#
+library(ggplot2)#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=1)]#
+#
+ggplot(DT, aes(x=X_squared, y=Z_abs)) + geom_line() +#
+  geom_line(aes(x=x,y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+rm(list=ls())#
+#
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, Z_abs := dnorm(x^2)* 1/(2*sqrt(x))] #
+#
+DT[, X_squared := x^2 ]#
+#
+library(ggplot2)#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=1)]#
+#
+ggplot(DT, aes(x=X_squared, y=Z_abs)) + geom_line() +#
+  geom_line(aes(x=x,y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+rm(list=ls())#
+#
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, Z_abs := dnorm(2*x)* 1/(2*sqrt(x))] #
+#
+DT[, X_squared := x^2 ]#
+#
+library(ggplot2)#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=1)]#
+#
+ggplot(DT, aes(x=X_squared, y=Z_abs)) + geom_line() +#
+  geom_line(aes(x=x,y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+rm(list=ls())#
+#
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, Z_abs := dnorm(x)* 1/(2*sqrt(x))] #
+#
+DT[, X_squared := x^2 ]#
+#
+library(ggplot2)#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=1)]#
+#
+ggplot(DT, aes(x=X_squared, y=Z_abs)) + geom_line() +#
+  geom_line(aes(x=x,y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+rm(list=ls())#
+#
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, Z_abs := dnorm(sqrt(x))* 1/(2*sqrt(x))] #
+#
+DT[, X_squared := x^2 ]#
+#
+library(ggplot2)#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=1)]#
+#
+ggplot(DT, aes(x=X_squared, y=Z_abs)) + geom_line() +#
+  geom_line(aes(x=x,y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+rm(list=ls())#
+#
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, X_squared := x^2 ]#
+#
+DT[, Z_abs := dnorm(sqrt(X_squared))* 1/(2*sqrt(X_squared))] #
+#
+library(ggplot2)#
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=1)]#
+#
+ggplot(DT, aes(x=X_squared, y=Z_abs)) + geom_line() +#
+  geom_line(aes(x=x,y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+DT[, Z_abs := dnorm(x)* 1/(2*x)]
+ggplot(DT, aes(x=X_squared, y=Z_abs)) + geom_line() +#
+  geom_line(aes(x=x,y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+DT[, Z_abs := dnorm(X_squared)* 1/(2*x)]
+ggplot(DT, aes(x=X_squared, y=Z_abs)) + geom_line() +#
+  geom_line(aes(x=x,y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, X_squared := x^2 ]#
+#
+DT[, Z_abs := dnorm(sqrt(X_squared))* 1/(2*sqrt(X_squared))] #
+DT[, Z_abs := dnorm(X_squared)* 1/(2*sqrt(X_squared))] #
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=1)]#
+#
+ggplot(DT, aes(x=X_squared, y=Z_abs)) + geom_line() +#
+  geom_line(aes(x=x,y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, X_squared := x^2 ]#
+#
+DT[, Z_abs := dnorm(sqrt(X_squared))* 1/(2*sqrt(X_squared))] #
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=1)]#
+#
+ggplot(DT, aes(x=X_squared, y=Z_abs)) + geom_line() +#
+  geom_line(aes(x=X_squared,y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, X_squared := x^2 ]#
+#
+DT[, Z_abs := 2*dnorm(sqrt(X_squared))* 1/(2*sqrt(X_squared))] #
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=1)]#
+#
+ggplot(DT, aes(x=X_squared, y=Z_abs)) + geom_line() +#
+  geom_line(aes(x=X_squared,y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+rm(list=ls())#
+#
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, X_squared := x^2 ]#
+#
+DT[, Z_abs := 2*dnorm(x)* 1/(2*x)] #
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=1)]#
+#
+ggplot(DT, aes(x=X_squared, y=Z_abs)) + geom_line() +#
+  geom_line(aes(x=X_squared,y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+rm(list=ls())#
+#
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, X_squared := x^2 ]#
+#
+DT[, Z_abs := 2*dnorm(x)* 1/(2*x)] #
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=1)]#
+#
+ggplot(DT, aes(x=X_squared, y=Z_abs)) + geom_line() +#
+  geom_line(aes(y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))
+ggplot(DT, aes(x=X_squared, Z_abs)) + geom_line() +
+scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))
+ggplot(DT, aes(x=X_squared, y=Z_abs)) + geom_line() +#
+  geom_line(aes(y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))+#
+  scale_y_continuous(limits=c(0,0.8))
+library(ggplot2)#
+#
+rm(list=ls())#
+#
+DT <- data.table(x = seq(0, 3.5, by=0.01))#
+#
+DT[, X_squared := x^2 ]#
+#
+#DT[, Z_abs := 2*dnorm(sqrt(X_squared))* 1/(2*sqrt(X_squared))] #
+DT[, Z_abs := 2*dnorm(x)] #
+DT[, Z_abs := Z_abs* 1/(2*sqrt(X_squared))] #
+#
+ggplot(DT, aes(X_squared, Z_abs)) + geom_line() +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5))#
+  DT[, Chisq := dchisq(X_squared, df=1)]#
+#
+ggplot(DT, aes(x=X_squared, y=Z_abs)) + geom_line() +#
+  geom_line(aes(x=X_squared,y=Chisq), color="red") +#
+  scale_x_continuous(limits=c(0,3.5), breaks=seq(0,3.5,0.5)) +#
+  scale_y_continuous(limits=c(0,0.8)) +#
+  ylab("Density")
+400 + 160 +360 + 160
+1080 * 120
+(1080 * 120) / 1000
+(1080 * 120) / 1000 / 60
+3*sqrt(3)
+3*sqrt(3)/2
+2* sqrt(3) * 1.5
+200 * 10
+?cosd
+?cos
+v_obj <- 12#
+v_patt <- c(5,10,15)#
+r_sacc <- v_obj *#
+r_purs <- v_obj * cos(c(18, 31, 40)/180*pi)
+v_obj <- 12#
+v_patt <- c(5,10,15)
+r_purs <- v_obj * cos(c(18, 31, 40)/180*pi)
+r_purs
+v_obj <- 12#
+v_patt <- c(5,10,15)#
+r_purs <- v_obj / cos(c(18, 31, 40)/180*pi)
+r_purs
+help(package=mlisi)
+# generate some some fake data#
+set.seed(1)#
+x <- runif(900)*6-3#
+condition <- rep(1:3,300)#
+d <- data.frame(x , condition)#
+d$condition <- as.factor(d$condition)#
+d$r <- NA#
+for(i in 1:sum(d$condition=="1")) {d$r[d$condition=="1"][i] <- rbinom(1,1,psy_3par(d$x[d$condition=="1"][i],0,0.5,0.05))}#
+for(i in 1:sum(d$condition=="2")) {d$r[d$condition=="2"][i] <- rbinom(1,1,psy_3par(d$x[d$condition=="2"][i],0,1,0.05))}#
+for(i in 1:sum(d$condition=="3")) {d$r[d$condition=="3"][i] <- rbinom(1,1,psy_3par(d$x[d$condition=="3"][i],0,1.5,0.05))}#
+#
+# set reasonable intial guesses and boundaries, and do contrained optimization#
+start_p <- c(rep(c(0,1),3), 0.01)#
+l_b <- c(rep(c(-6,0.0001),3), 0)#
+u_b <- c(rep(c(6,6),3), 0.2)#
+fit <- optim(par = start_p, lnorm_3par_multi , d=d, method="L-BFGS-B",hessian = T, lower =l_b, upper =u_b)#
+#
+# estimated parameters#
+round(fit$par,digits=5)#
+#
+# standard error of the estimates #
+sqrt(diag(solve(fit$hessian)))#
+#
+# simple ggplot figure #
+nd <- expand.grid(x=seq(-3,3,length.out=200),condition=unique(d$condition))#
+nd$r <- predict_3par_multi(fit$par, nd)#
+ggplot2::ggplot(d, aes(x=x,y=r))+geom_point(pch=19,col="blue",alpha=0.05)+geom_line(data=nd,color="black",lwd=0.5)+facet_grid(.~condition)+nice_theme
+library(mlisi)
+# generate some some fake data#
+set.seed(1)#
+x <- runif(900)*6-3#
+condition <- rep(1:3,300)#
+d <- data.frame(x , condition)#
+d$condition <- as.factor(d$condition)#
+d$r <- NA#
+for(i in 1:sum(d$condition=="1")) {d$r[d$condition=="1"][i] <- rbinom(1,1,psy_3par(d$x[d$condition=="1"][i],0,0.5,0.05))}#
+for(i in 1:sum(d$condition=="2")) {d$r[d$condition=="2"][i] <- rbinom(1,1,psy_3par(d$x[d$condition=="2"][i],0,1,0.05))}#
+for(i in 1:sum(d$condition=="3")) {d$r[d$condition=="3"][i] <- rbinom(1,1,psy_3par(d$x[d$condition=="3"][i],0,1.5,0.05))}#
+#
+# set reasonable intial guesses and boundaries, and do contrained optimization#
+start_p <- c(rep(c(0,1),3), 0.01)#
+l_b <- c(rep(c(-6,0.0001),3), 0)#
+u_b <- c(rep(c(6,6),3), 0.2)#
+fit <- optim(par = start_p, lnorm_3par_multi , d=d, method="L-BFGS-B",hessian = T, lower =l_b, upper =u_b)#
+#
+# estimated parameters#
+round(fit$par,digits=5)#
+#
+# standard error of the estimates #
+sqrt(diag(solve(fit$hessian)))#
+#
+# simple ggplot figure #
+nd <- expand.grid(x=seq(-3,3,length.out=200),condition=unique(d$condition))#
+nd$r <- predict_3par_multi(fit$par, nd)#
+ggplot2::ggplot(d, aes(x=x,y=r))+geom_point(pch=19,col="blue",alpha=0.05)+geom_line(data=nd,color="black",lwd=0.5)+facet_grid(.~condition)+nice_theme
+str(d)
+# generate some some fake data#
+set.seed(1)#
+x <- runif(900)*6-3#
+condition <- rep(1:3,300)#
+d <- data.frame(x , condition)#
+d$condition <- as.factor(d$condition)#
+d$r <- NA#
+for(i in 1:sum(d$condition=="1")) {d$r[d$condition=="1"][i] <- rbinom(1,1,psy_3par(d$x[d$condition=="1"][i],0,0.5,0.05))}#
+for(i in 1:sum(d$condition=="2")) {d$r[d$condition=="2"][i] <- rbinom(1,1,psy_3par(d$x[d$condition=="2"][i],0,1,0.05))}#
+for(i in 1:sum(d$condition=="3")) {d$r[d$condition=="3"][i] <- rbinom(1,1,psy_3par(d$x[d$condition=="3"][i],0,1.5,0.05))}
+start_p <- c(rep(c(0,1),3), 0.01)
+l_b <- c(rep(c(-6,0.0001),3), 0)
+u_b <- c(rep(c(6,6),3), 0.2)
+start_p <- c(rep(c(0,1),3), 0.01)#
+l_b <- c(rep(c(-6,0.01),3), 0)#
+u_b <- c(rep(c(6,6),3), 0.2)#
+fit <- optim(par = start_p, lnorm_3par_multi , d=d, method="L-BFGS-B",hessian = T, lower =l_b, upper =u_b)
+round(fit$par,digits=5)
+fit <- optim(par = start_p, lnorm_3par_multi , d=d)
+round(fit$par,digits=5)#
+#
+# standard error of the estimates #
+sqrt(diag(solve(fit$hessian)))#
+#
+# simple ggplot figure #
+nd <- expand.grid(x=seq(-3,3,length.out=200),condition=unique(d$condition))#
+nd$r <- predict_3par_multi(fit$par, nd)#
+ggplot2::ggplot(d, aes(x=x,y=r))+geom_point(pch=19,col="blue",alpha=0.05)+geom_line(data=nd,color="black",lwd=0.5)+facet_grid(.~condition)+nice_theme
+library(ggplot2)
+ggplot(d, aes(x=x,y=r))+geom_point(pch=19,col="blue",alpha=0.05)+geom_line(data=nd,color="black",lwd=0.5)+facet_grid(.~condition)+nice_theme
+ggplot(d, aes(x=x,y=r))+geom_point(pch=19,col="blue",alpha=0.05)+geom_line(data=nd,color="black",lwd=0.5)+facet_grid(.~condition)
+set.seed(1)#
+x <- runif(900)*6-3#
+condition <- rep(1:3,300)#
+d <- data.frame(x , condition)#
+d$condition <- as.factor(d$condition)#
+d$r <- NA#
+for(i in 1:sum(d$condition=="1")) {d$r[d$condition=="1"][i] <- rbinom(1,1,psy_3par(d$x[d$condition=="1"][i],0,0.5,0.05))}#
+for(i in 1:sum(d$condition=="2")) {d$r[d$condition=="2"][i] <- rbinom(1,1,psy_3par(d$x[d$condition=="2"][i],0,1,0.05))}#
+for(i in 1:sum(d$condition=="3")) {d$r[d$condition=="3"][i] <- rbinom(1,1,psy_3par(d$x[d$condition=="3"][i],0,1.5,0.05))}#
+#
+# set reasonable intial guesses and boundaries, and do contrained optimization#
+start_p <- c(rep(c(0,1),3), 0.01)#
+l_b <- c(rep(c(-6,0.01),3), 0)#
+u_b <- c(rep(c(6,6),3), 0.2)#
+fit <- optim(par = start_p, lnorm_3par_multi , d=d)#
+#
+# estimated parameters#
+round(fit$par,digits=5)#
+#
+# standard error of the estimates #
+sqrt(diag(solve(fit$hessian)))#
+#
+# simple ggplot figure #
+nd <- expand.grid(x=seq(-3,3,length.out=200),condition=unique(d$condition))#
+nd$r <- predict_3par_multi(fit$par, nd)#
+library(ggplot2)#
+ggplot(d, aes(x=x,y=r))+geom_point(pch=19,col="blue",alpha=0.05)+geom_line(data=nd,color="black",lwd=0.5)+facet_grid(.~condition)
+fit <- optim(par = start_p, lnorm_3par_multi , d=d, hessian=T)
+sqrt(diag(solve(fit$hessian)))
+# simple ggplot figure #
+nd <- expand.grid(x=seq(-3,3,length.out=200),condition=unique(d$condition))#
+nd$r <- predict_3par_multi(fit$par, nd)#
+library(ggplot2)#
+ggplot(d, aes(x=x,y=r))+geom_point(pch=19,col="blue",alpha=0.05)+geom_line(data=nd,color="black",lwd=0.5)+facet_grid(.~condition)
+install_github("mattelisi/mlisi")
+library(devtools)
+install_github("mattelisi/mlisi")
+?lnorm_3par_multi
+library(mlisi)
+?lnorm_3par_multi
+remove.packages(mlisi)
+remove.packages("mlisi")
+install_github("mattelisi/mlisi")
+help(package=mlisi)
+library(devtools)#
+install_github("mattelisi/mlisi")
+library(mlisi)
+help(package=mlisi)
+install.packages("knitr")
+install.packages(rmarkdown)
+install.packages("rmarkdown")
+setwd(sync/mlisi)
+setwd("sync/mlisi")
+library(roxygen2)
+document()
+??document
+document()
+roxygen2::document()
+library("roxygen2")
+document()
+library(devtools)
+document()
+document()
